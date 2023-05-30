@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagesssss.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #454f5f;
+    size: 25in;
+  }
+  
+
+  .logo-left {
+    margin-right: auto;
+    margin-left: 70px;
+    margin-top: 5px;
+    width: 100px;
+    height: 90px;
+  }
+
+
+  .logo-right {
+    margin-left: auto;
+    margin-right: 70px;
+    margin-top: 5px;
+    width: 100px;
+    height: 90px;
+   
+  }
+
+
+img {
+    float: left;
+    display: inline-flex;
+  }
+
+
+.bold-label {
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+  width: 640px;
+  resize: vertical; /* Allows vertical resizing */
+}
+
+.container {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Adjust the height as needed */
+}
+
+.container2 {
+   size: 700px;
+   justify-content: center;
+   font-size: large;
+   color: white;
+  }
+  
+  .container3 {
+    display: flexbox;
+    margin-top: 10px;
+    margin-left: 1000px;
+    padding: 0;
+    justify-content: center;
+     
+   }
+
+.form-box {
+  width: 650px; /* Adjust the width as needed */
+  height: 520px;
+  padding: 20px;
+  background-color: #b8c0ca;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.red-italic {
+  color: red;
+  font-style: italic;
+}
+
+
+.button-container-div {
+    margin: auto;
+    background-color: #504fb3;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Book Antiqua';
+    position: center;
+    width: 90px;
+    margin: auto;
+    text-align: center;
+}
+
+.button {
+    background-color: #2f345f;
+    color: beige;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Book Antiqua';
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+}
+
+.button:hover {
+    background-color: #8ca3c5;
+}
