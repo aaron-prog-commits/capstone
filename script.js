@@ -31,31 +31,6 @@ function validateForm() {
 
    
 
-    //number of offense
-
-    var option = document.getElementById("offense").value;
-    if (late === "") {
-        alert("Please select Yes or No.");
-        return false;
-    }
-
-
-    //absent
-    var absent = document.getElementById("absent").value;
-    if (absent === "") {
-        alert("Please select Yes or No.");
-        return false;
-    }
-
-    //date of absence
-    var dateAbsence= document.getElementById("dateAbsence").value;
-    if (dateAbsence === "") {
-        alert("Please select date.");
-        return false;
-    }
-
-    
-
  
 
 

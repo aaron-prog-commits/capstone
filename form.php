@@ -38,7 +38,7 @@
             
                     <!-- LRN -->
                     <label class="bold-label" for="LRN">LRN:</label>
-                    <input type="text" name="LRN"  size="29" required>
+                    <input type="text" name="LRN"  required>
                 
                     <!-- DATE -->
                     <label class="bold-label" for="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admission Date:</label>
@@ -68,42 +68,28 @@
 
 
                     <div class="question2">
-                    <label class="bold-label">Number of offense:</label>
-                        <label><input type="radio" name="offense" id="1st" value="1st" />1st</label>
-                        <label><input type="radio" name="offense" id="2nd" value="2nd" />2nd</label>
-                        <label><input type="radio" name="offense" id="3rd" value="3rd" />3rd</label>
-                        <label><input type="radio" name="offense" id="4th" value="4th" />4th (Parent Needed) </label>
+                    <label class="bold-label" name="offense">Number of offense:</label>
+                        <label><input type="radio" name="offenseNumber" id="1st" value="1st" />1st</label>
+                        <label><input type="radio" name="offenseNumber" id="2nd" value="2nd" />2nd</label>
+                        <label><input type="radio" name="offenseNumber" id="3rd" value="3rd" />3rd</label>
+                        <label><input type="radio" name="offenseNumber" id="4th" value="4th" />4th (Parent Needed) </label>
                     </div>
 
                     </select>
-
-                    <script>
-                    
-                    function check() {
-                            if (document.getElementById('No').checked) {
-                                document.getElementById('1st').disabled = true;
-                                document.getElementById('2nd').disabled = true;
-                                document.getElementById('3rd').disabled = true;
-                                document.getElementById('4th').disabled = true;
-                            }
-                        }
-                                
-                    </script>
-
+            
                     <br>
-                  
-
+                 
                     <!-- ABSENT -->
                     <div class="question1">
-                        <label class="bold-label">Are you absent?:</label>
-                        <input type="radio" name="myRadio" value="Yes"> Yes
-                        <input type="radio" name="myRadio" value="No"> No
+                        <label class="bold-label" for="absent">Are you absent?:</label>
+                        <label><input name="absent" type="radio"  id="Yes"value="Yes"/> Yes </label>
+                        <label><input name="absent" type="radio"  id="No" value="No"/> No </label>
                     </div>
                        <br>
                     
                     <!-- DATE OF ABSENCE -->
-                    <label class="bold-label" for="dateAbsence">Date of Absence:</label>
-                    <input type="date" id="dateAbsence">
+                    <label class="bold-label" name="dateAbsence">Date of Absence:</label>
+                    <input type="date" name="dateAbsence" id="dateAbsence">
                     <br><br>
                     
                     
@@ -114,11 +100,18 @@
                     </div>
                     <br>
 
-                    <script>
+                    
+
+                    <!-- SUBMIT BUTTON -->
+                  <div class="button-container-div">
+                    <button class="button" type="submit" name="save"><b>Submit</b></button>
+                </div>
+
+                <script>
                     
                     
                      // Get the radio button and datepicker elements
-                        var radioButtons = document.getElementsByName("myRadio");
+                        var radioButtons = document.getElementsByName("absent");
                         var datepicker = document.getElementById("dateAbsence");
 
                         // Add an event listener to the radio buttons
@@ -134,13 +127,17 @@
                         });
                         }
 
+                        function check() {
+                            if (document.getElementById('No').checked) {
+                                document.getElementById('1st').disabled = true;
+                                document.getElementById('2nd').disabled = true;
+                                document.getElementById('3rd').disabled = true;
+                                document.getElementById('4th').disabled = true;
+                            }
+                        }
+
                                                      
                     </script>
-
-                    <!-- SUBMIT BUTTON -->
-                  <div class="button-container-div">
-                    <button class="button" type="submit" name="save"><b>Submit</b></button>
-                </div>
            
         </div>
     </form>

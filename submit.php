@@ -21,13 +21,13 @@ $date = $_POST['date'];
 $name = $_POST['name'];
 $section = $_POST['section'];
 $late = $_POST['late'];
-$offesnseNumber = $_POST['option'];
+$offenseNumber = $_POST['offenseNumber'];
 $absent = $_POST['absent'];
 $dateAbsence = $_POST['dateAbsence'];
 $reasonAbsence = $_POST['reasonAbsence'];
 
 
-$sql_query = "INSERT INTO admissionslip (LRN, date, name, section, late, offenseNumber, absent, dateAbsence, reasonAbsence) VALUES ('$LRN', '$date','$name', '$section', '$late', '$offesnseNumber', '$absent', '$dateAbsence', '$reasonAbsence')";
+$sql_query = "INSERT INTO admissionslip (LRN, date, name, section, late, offenseNumber, absent, dateAbsence, reasonAbsence) VALUES ('$LRN', '$date','$name', '$section', '$late', '$offenseNumber', '$absent', '$dateAbsence', '$reasonAbsence')";
 
 $rs = mysqli_query($connection, $sql_query);
 
